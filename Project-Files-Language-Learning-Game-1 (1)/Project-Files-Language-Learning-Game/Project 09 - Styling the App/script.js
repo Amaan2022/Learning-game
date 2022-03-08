@@ -19,6 +19,7 @@ let questions = [
         alternatives: ['fly', 'puma', 'fish', 'dog'],
         correctAnswer: 0
     }
+    //test comment
 ];
 
 
@@ -27,7 +28,7 @@ let app = {
 
         this.currPosition = 0;
         this.score = 0;
-        
+
         // get alternatives
         let alts = document.querySelectorAll('.alternative');
 
@@ -45,7 +46,7 @@ let app = {
         // show first question
         this.showQuestion(questions[this.currPosition]);
     },
-    
+
     showQuestion: function(q) {
 
         // show question title
@@ -54,9 +55,9 @@ let app = {
 
         // show alternatives
         let alts = document.querySelectorAll('.alternative');
-        
+
         alts.forEach(function(element, index){
-            element.textContent = q.alternatives[index];        
+            element.textContent = q.alternatives[index];
         });
     },
 
@@ -124,13 +125,7 @@ let app = {
     }
 
 
-    
+
 };
 
 app.start();
-
-
-
-
-
-
